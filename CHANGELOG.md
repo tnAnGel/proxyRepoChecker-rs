@@ -10,9 +10,15 @@
 
 ### 📦 Автоматическая публикация · Automated publishing · 自动发布
 
-- **RU:** Сборщик прокси запускается каждые 30 минут и публикует результаты в ветку `dist` этой репозитории. README на русском, английском и китайском языках теперь ссылаются на файлы и Actions проекта `tnAnGel/proxyRepoChecker-rs`.
+- **RU:** Сборщик прокси запускается каждые 30 минут и публикует результаты в ветку `dist` репозитория `tnAnGel/proxyRepoChecker-rs`. README на русском, английском и китайском языках теперь ссылаются на файлы и Actions проекта.
 - **EN:** The proxy collector runs every 30 minutes and publishes results to this repository’s `dist` branch. The Russian, English, and Chinese READMEs now link to files and Actions in `tnAnGel/proxyRepoChecker-rs`.
 - **中文：** 代理收集器每 30 分钟运行一次，并将结果发布到本仓库的 `dist` 分支。俄语、英语和中文 README 现在均链接到 `tnAnGel/proxyRepoChecker-rs` 中的文件及 Actions。
+
+### 📦 Загрузки · Downloads · 下载
+
+- **RU:** К релизу приложены архивы для Linux x86_64, macOS Apple Silicon и Windows x86_64, а также `SHA256SUMS` для проверки загрузок.
+- **EN:** This release includes archives for Linux x86_64, macOS Apple Silicon, and Windows x86_64, plus `SHA256SUMS` to verify the downloads.
+- **中文：** 本版本提供 Linux x86_64、macOS Apple Silicon 和 Windows x86_64 压缩包，并附带 `SHA256SUMS` 供下载校验。
 
 ## v0.1.2 — Стабильный релизный CI / Stable release CI / 稳定发布 CI
 
