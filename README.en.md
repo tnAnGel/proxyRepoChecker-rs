@@ -147,7 +147,7 @@ The Ubuntu, macOS, and Windows build/test workflow is available for manual runs.
 
 ## 📦 Releases
 
-Pushing a `vX.Y.Z` tag that matches the version in `Cargo.toml` builds archives for Linux, macOS, and Windows. GitHub Actions attaches SHA-256 checksums and creates a **draft** Release containing the three-language documentation, ready for review and editing before publication.
+Pushing a `vX.Y.Z` tag that matches the version in `Cargo.toml` runs workspace tests and builds archives for Linux, macOS, and Windows. After all builds succeed, GitHub Actions publishes a Release with the three-language documentation, archives, and SHA-256 checksums.
 
 <a id="published-results"></a>
 

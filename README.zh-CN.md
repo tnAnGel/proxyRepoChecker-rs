@@ -147,7 +147,7 @@ Ubuntu、macOS 和 Windows 的构建与测试 workflow 可手动运行。代理�
 
 ## 📦 发布版本
 
-推送与 `Cargo.toml` 版本号一致的 `vX.Y.Z` 标签后，GitHub Actions 会为 Linux、macOS 和 Windows 构建压缩包，附加 SHA-256 校验和，并创建包含三种语言文档的 **Release 草稿**，供发布前检查和编辑。
+推送与 `Cargo.toml` 版本号一致的 `vX.Y.Z` 标签后，GitHub Actions 会运行 workspace 测试并为 Linux、macOS 和 Windows 构建压缩包。所有构建成功后，Actions 会发布正式 Release，并附上三种语言的文档、压缩包和 SHA-256 校验和。
 
 <a id="published-results"></a>
 

@@ -398,7 +398,7 @@ The coverage workflow pins a nightly toolchain for LLVM branch instrumentation a
 
 The cross-platform workflow is available through manual `workflow_dispatch`. It runs Clippy with warnings denied, a release build, and workspace tests on `ubuntu-latest`, `macos-latest`, and `windows-latest`; automatic push and pull-request triggers are disabled.
 
-The `.github/workflows/release.yml` workflow runs when a `v*` tag is pushed. It builds application and documentation archives on Linux, macOS, and Windows, generates SHA-256 checksums, and creates a draft GitHub Release for manual review.
+The `.github/workflows/release.yml` workflow runs when a `v*` tag is pushed. It runs workspace tests, builds application and documentation archives on Linux, macOS, and Windows, generates SHA-256 checksums, and publishes a GitHub Release after all builds succeed.
 
 The separate `.github/workflows/proxy-collection.yml` workflow runs every 30 minutes (at :11 and :41 UTC) or on manual dispatch. It performs a real network run using the public source catalog, generates a Clash configuration, and publishes artifacts to the `dist` branch. Scheduled runs do not cancel an active run. Do not invoke an equivalent full-source run locally unless you intentionally want the large network workload.
 

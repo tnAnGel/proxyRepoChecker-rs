@@ -147,7 +147,7 @@ cargo bench --bench pipeline
 
 ## 📦 Выпуски
 
-Push тега вида `vX.Y.Z`, совпадающего с версией в `Cargo.toml`, запускает сборку архивов для Linux, macOS и Windows. GitHub Actions прикладывает SHA-256 суммы и создаёт **черновик** Release с документацией на трёх языках; перед публикацией его можно проверить и отредактировать.
+Push тега вида `vX.Y.Z`, совпадающего с версией в `Cargo.toml`, запускает workspace-тесты и сборку архивов для Linux, macOS и Windows. После успешной сборки GitHub Actions публикует Release с документацией на трёх языках, архивами и SHA-256 суммами.
 
 <a id="published-results"></a>
 
