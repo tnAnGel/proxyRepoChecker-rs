@@ -83,10 +83,10 @@ jobs:
         run: |
           cd release-assets
           sha256sum * > SHA256SUMS
-      - name: Create draft release
+      - name: Publish release
         uses: softprops/action-gh-release@v2
         with:
-          draft: true
+          draft: false
           body_path: release-notes.md
           files: release-assets/*
           fail_on_unmatched_files: true

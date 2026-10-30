@@ -1,5 +1,19 @@
 # История изменений · Changelog · 更新日志
 
+## v0.1.3 — Совместимость конфигураций и надёжные проверки / Configuration compatibility and reliable checks / 配置兼容性与可靠检测
+
+### ✨ Улучшения и исправления · Improvements and fixes · 改进与修复
+
+- **RU:** Исправлена совместимость Hysteria 1 с Clash/mihomo. Экспорт sing-box корректно переносит WebSocket Host и Reality public key из Xray-параметров. Счётчики этапов TCP-проверки согласованы, а проверки узлов с DNS-именами выполняются эффективнее.
+- **EN:** Fixed Hysteria 1 compatibility with Clash/mihomo. sing-box export now maps the WebSocket Host and Reality public key from Xray settings correctly. TCP-check stage counters are consistent, and probing nodes with DNS names is more efficient.
+- **中文：** 修复了 Hysteria 1 与 Clash/mihomo 的兼容性。sing-box 导出现在能正确映射 Xray 设置中的 WebSocket Host 和 Reality public key。统一了 TCP 检查阶段的计数，并提高了使用 DNS 域名的节点检测效率。
+
+### 📦 Автоматическая публикация · Automated publishing · 自动发布
+
+- **RU:** Сборщик прокси запускается каждые 30 минут и публикует результаты в ветку `dist` этой репозитории. README на русском, английском и китайском языках теперь ссылаются на файлы и Actions проекта `tnAnGel/proxyRepoChecker-rs`.
+- **EN:** The proxy collector runs every 30 minutes and publishes results to this repository’s `dist` branch. The Russian, English, and Chinese READMEs now link to files and Actions in `tnAnGel/proxyRepoChecker-rs`.
+- **中文：** 代理收集器每 30 分钟运行一次，并将结果发布到本仓库的 `dist` 分支。俄语、英语和中文 README 现在均链接到 `tnAnGel/proxyRepoChecker-rs` 中的文件及 Actions。
+
 ## v0.1.2 — Стабильный релизный CI / Stable release CI / 稳定发布 CI
 
 ### 🛠 Исправления · Fixes · 修复
