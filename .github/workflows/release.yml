@@ -57,6 +57,7 @@ jobs:
         shell: bash
         env:
           RELEASE_TAG: ${{ inputs.tag || github.ref_name }}
+          PYTHONUTF8: "1"
         run: >-
           python scripts/package_release.py
           --tag "$RELEASE_TAG"
