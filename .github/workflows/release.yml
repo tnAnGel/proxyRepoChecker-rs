@@ -4,6 +4,12 @@ on:
   push:
     tags:
       - "v*"
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag to rebuild, for example v0.1.3"
+        required: true
+        type: string
 
 permissions:
   contents: read
@@ -42,7 +48,7 @@ jobs:
       - name: Package release archive
         shell: bash
         env:
-          RELEASE_TAG: ${{ github.ref_name }}
+          RELEASE_TAG: ${{ inputs.tag || github.ref_name }}
         run: >-
           python scripts/package_release.py
           --tag "$RELEASE_TAG"
@@ -74,7 +80,7 @@ jobs:
           merge-multiple: true
       - name: Prepare localized release notes
         env:
-          RELEASE_TAG: ${{ github.ref_name }}
+          RELEASE_TAG: ${{ inputs.tag || github.ref_name }}
         run: >-
           python scripts/extract_release_notes.py
           --tag "$RELEASE_TAG"
@@ -86,6 +92,7 @@ jobs:
       - name: Publish release
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ inputs.tag || github.ref_name }}
           draft: false
           body_path: release-notes.md
           files: release-assets/*
