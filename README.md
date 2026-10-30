@@ -6,7 +6,7 @@
 
 `proxy-rs` собирает прокси из подписок, проверяет доступность и скорость, а затем помогает подготовить конфигурацию для Clash/mihomo. Работает на Windows, macOS и Linux.
 
-[![CI checks](https://img.shields.io/badge/CI-manual%20checks-blue?logo=githubactions&logoColor=white)](https://github.com/tnAnGel/proxyRepoChecker-rs/actions/workflows/cross-platform.yml)
+[![CI checks](https://img.shields.io/badge/CI-manual%20checks-blue?logo=githubactions&logoColor=white)](https://github.com/adamantida/proxyRepoChecker-rs/actions/workflows/cross-platform.yml)
 ![Rust 2021](https://img.shields.io/badge/Rust-2021-orange)
 ![Windows · macOS · Linux](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-64748b)
 
@@ -157,12 +157,12 @@ Push тега вида `vX.Y.Z`, совпадающего с версией в `
 
 | Что нужно | Файл |
 |---|---|
-| Готовый конфиг для Clash/mihomo | [📥 clash.yaml](https://raw.githubusercontent.com/tnAnGel/proxyRepoChecker-rs/dist/clash.yaml) |
-| Прокси, прошедшие проверку скорости | [⚡ good.txt](https://raw.githubusercontent.com/tnAnGel/proxyRepoChecker-rs/dist/good.txt) |
-| Все прокси после включённых проверок | [✅ alive.txt](https://raw.githubusercontent.com/tnAnGel/proxyRepoChecker-rs/dist/alive.txt) |
-| Прокси, отклонённые проверками | [🧾 dead.txt](https://raw.githubusercontent.com/tnAnGel/proxyRepoChecker-rs/dist/dead.txt) |
+| Готовый конфиг для Clash/mihomo | [📥 clash.yaml](https://raw.githubusercontent.com/adamantida/proxyRepoChecker-rs/dist/clash.yaml) |
+| Прокси, прошедшие проверку скорости | [⚡ good.txt](https://raw.githubusercontent.com/adamantida/proxyRepoChecker-rs/dist/good.txt) |
+| Все прокси после включённых проверок | [✅ alive.txt](https://raw.githubusercontent.com/adamantida/proxyRepoChecker-rs/dist/alive.txt) |
+| Прокси, отклонённые проверками | [🧾 dead.txt](https://raw.githubusercontent.com/adamantida/proxyRepoChecker-rs/dist/dead.txt) |
 
-Публикация запускается каждые 30 минут — в **11 и 41 минуту UTC** — и вручную через [GitHub Actions](https://github.com/tnAnGel/proxyRepoChecker-rs/actions/workflows/proxy-collection.yml). Новые файлы появляются после успешного завершения проверки; если запуск завершится ошибкой, текущие ссылки продолжат работать с предыдущими результатами. GitHub может немного задержать запуск при высокой нагрузке.
+Публикация запускается каждые 60 минут — и вручную через [GitHub Actions](https://github.com/adamantida/proxyRepoChecker-rs/actions/workflows/proxy-collection.yml). Новые файлы появляются после успешного завершения проверки; если запуск завершится ошибкой, текущие ссылки продолжат работать с предыдущими результатами. GitHub может немного задержать запуск при высокой нагрузке.
 
 ## 💬 uSphere VPN
 
